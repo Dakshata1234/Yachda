@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌿 Plant Disease Recognition 🌿</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" id="homeLink">Home</a></li>
+            <li><a href="#" id="searchLink">Search</a></li>
+            <li><a href="#" id="historyLink">History</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="content-section active">
+        <h1>🌿 Welcome to Plant Disease Recognition 🌿</h1>
+        <p>Upload an image of a plant to predict its disease using advanced machine learning techniques.</p>
+        <p>This tool is designed to help you identify plant diseases and provide quick solutions.</p>
+    </section>
+
+    <!-- Search Section -->
+    <section id="search" class="content-section">
+        <h2>🔍 Upload an Image to Diagnose Disease</h2>
+        <form id="imageForm" class="image-form">
+            <input type="file" id="imageInput" accept="image/*" required>
+            <div id="imagePreview" class="image-preview">Your image preview will appear here.</div>
+            <button type="submit" class="submit-btn">Previse</button>
+        </form>
+       <div id="result" class="result"></div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="content-section">
+        <h2>📜 Your Search History</h2>
+        <ul id="historyList">
+            <!-- Previously searched items will appear here -->
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

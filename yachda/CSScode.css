@@ -1,0 +1,122 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #15df1f4d, #739bcf);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in-out;
+}
+
+.title {
+    color: #358540;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.image-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #070000;
+}
+
+input[type="file"] {
+    padding: 10px;
+    background-color: #F0F4FF;
+    border: 2px dashed #010a0e;
+    border-radius: 10px;
+    color: #333;
+    font-size: 16px;
+    transition: all 0.3s;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="file"]:hover {
+    background-color: #02060e;
+    border-color: #19365b;
+}
+
+.image-preview {
+    width: 150px;
+    height: 150px;
+    background-color: #F0F4FF;
+    border: 3px dashed #000507;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #333;
+    transition: all 0.4s;
+    overflow: hidden;
+}
+
+.image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.submit-btn {
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #FF8A00, #E52E71);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.submit-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    transition: all 0.4s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .submit-btn {
+        padding: 10px 20px;
+    }
+}
